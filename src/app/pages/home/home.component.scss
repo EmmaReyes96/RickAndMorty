@@ -1,0 +1,54 @@
+.terra{
+    background-image: url(../../../assets/imgs/terra2.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    min-height: 100vh;
+    height: 100vh;
+    position: absolute;
+    width: 100vw;
+
+
+}
+.cloud{
+    background-image: url(../../../assets/imgs/cloud.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 100vh;
+    background-size: 110%;
+
+}
+.wallpaper{
+    background-image: url(../../../assets/imgs/wallpaper.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100%;
+    min-height: 100vh;
+}
+
+.vista{
+    overflow: hidden;
+    height: 100vh;
+}
+
+.home{
+    background-color: rgb(44, 44, 158);
+    // position: relative;
+}
+
+
+@media (max-width: 1250px) {
+    // .wallpaper {
+    //     background-size: cover; 
+    // }
+    // .terra {
+    //     background-size: cover; 
+    // }
+    // .moon {
+    //     background-size: cover; 
+    // }
+}
+// @media (max-width: 1000px) {
+//     .cloud {
+//         background-size: cover
+//     }
+// }
