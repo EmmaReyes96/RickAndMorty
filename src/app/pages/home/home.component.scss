@@ -2,53 +2,61 @@
     background-image: url(../../../assets/imgs/terra2.png);
     background-repeat: no-repeat;
     background-size: 100%;
-    min-height: 100vh;
-    height: 100vh;
     position: absolute;
-    width: 100vw;
-
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    margin-top: -150px;
 
 }
+
 .cloud{
     background-image: url(../../../assets/imgs/cloud.png);
     background-repeat: no-repeat;
     background-attachment: fixed;
-    min-height: 100vh;
     background-size: 110%;
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    z-index: 1;
 
 }
+
 .wallpaper{
     background-image: url(../../../assets/imgs/wallpaper.png);
     background-repeat: no-repeat;
     background-attachment: fixed;
+    position: absolute;
     background-size: 100%;
-    min-height: 100vh;
+    height: 100vh;
+    width: 100vw;
 }
 
 .vista{
-    overflow: hidden;
     height: 100vh;
+    width: 100vw;
 }
 
 .home{
-    background-color: rgb(44, 44, 158);
-    // position: relative;
+    background-color: rgb(36, 29, 102);
+    position: relative;
+    overflow: hidden;
 }
 
 
-@media (max-width: 1250px) {
-    // .wallpaper {
-    //     background-size: cover; 
-    // }
-    // .terra {
-    //     background-size: cover; 
-    // }
-    // .moon {
-    //     background-size: cover; 
-    // }
+@media (max-width: 900px) {
+    .terra {
+        margin-top: 0px; 
+    }
 }
-// @media (max-width: 1000px) {
-//     .cloud {
-//         background-size: cover
-//     }
-// }
+@media (max-width: 600px) {
+    .terra {
+        margin-top: 150px; 
+    }
+    .wallpaper{
+        background-size: cover;
+    }
+    .cloud{
+        background-size: cover;
+    }
+}

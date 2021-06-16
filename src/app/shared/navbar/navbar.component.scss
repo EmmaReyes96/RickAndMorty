@@ -1,6 +1,21 @@
+.toolbar{
+    position: fixed; 
+    z-index: 1000;
+}
+
 .img{
     width: 150px;
-    margin-right: 20px;
+    margin-left: 20px;
+}
+
+li{    
+    list-style: none;
+    margin-left: 20px;
+}
+
+li a{
+    text-decoration: none;
+    color: gray;
 }
 
 .spacer {
@@ -8,5 +23,20 @@
 }
 
 .Active{
-    background-color: white;
+    color: white !important;
+}
+
+.Active2{
+    color: blue !important;
+}
+
+@media (min-width: 900px) {
+    #nav1 {
+        display: none;
+    }
+}
+@media (max-width: 900px) {
+    #nav2 {
+        display: none;
+    }
 }

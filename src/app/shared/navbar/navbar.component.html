@@ -1,46 +1,21 @@
- <mat-toolbar color="primary" style="position: fixed; z-index: 1000;">
+ <mat-toolbar color="primary" class="toolbar">
 
-  <button mat-icon-button  [matMenuTriggerFor]="menu">
+  <button mat-icon-button  [matMenuTriggerFor]="menu" id="nav1">
     <mat-icon>menu</mat-icon>
   </button>
   <img class="img" src="../../../assets/imgs/RickAndMorty.png" alt="">
 
   <span class="spacer"></span>
 
- <!-- <div>
-   <ul>
-     <li>
-       <a routerLink='/home' routerLinkActive></a>
-       locations
-     </li>
-     <li>
-       <a routerLink='/characters' routerLinkActive></a>
-       locations
-     </li>
-     <li>
-       <a routerLink='/episodes' routerLinkActive></a>
-       locations
-     </li>
-     <li>
-       <a routerLink='/locations' routerLinkActive></a>
-       locations
-     </li>
-   </ul>
- </div> -->
+  <li *ngFor="let url of urls" id="nav2">
+    <a routerLink={{url.link}} routerLinkActive='Active'>{{url.name}}</a>    
+  </li>
 
 </mat-toolbar>
 
 <mat-menu #menu="matMenu">
-  <button mat-menu-item>
-    <mat-icon>dialpad</mat-icon>
-    <span>Redial</span>
-  </button>
-  <button mat-menu-item disabled>
-    <mat-icon>voicemail</mat-icon>
-    <span>Check voice mail</span>
-  </button>
-  <button mat-menu-item>
-    <mat-icon>notifications_off</mat-icon>
-    <span>Disable alerts</span>
-  </button>
+  <li mat-menu-item *ngFor="let url of urls">
+    <a routerLink={{url.link}} routerLinkActive='Active2'>{{url.name}}</a>    
+  </li>
+  
 </mat-menu>

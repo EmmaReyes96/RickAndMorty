@@ -7,6 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavbarComponent implements OnInit {
 
+  urls = [
+    {link: '/home', name: 'Home'},
+    {link: '/characters', name: 'Characters'},
+    {link: '/episodes', name: 'Episodes'},
+    {link: '/locations', name: 'Locations'},
+  ]
+
   constructor() { }
 
   ngOnInit(): void {
